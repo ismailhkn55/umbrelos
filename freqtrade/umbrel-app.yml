@@ -1,0 +1,54 @@
+manifestVersion: 1
+id: freqtrade
+category: finance
+name: Freqtrade
+version: "stable"
+tagline: Otomatik kripto trading botu ve web arayüzü
+description: >-
+  Freqtrade, açık kaynaklı ve güçlü bir kripto alım-satım botudur.
+    Strateji tabanlı otomatik trading yapmanı sağlar.
+
+      - Açık kaynak ve tamamen ücretsizdir.
+        Kendi trading botunu kontrol et ve özelleştir.
+
+          - Docker ile hızlı kurulum.
+            Dakikalar içinde çalışır hale getir.
+
+              - Web arayüzü ile kolay kullanım.
+                Tarayıcı üzerinden botu kontrol et, işlemleri izle.
+
+                  - Strateji desteği (Python).
+                    Kendi stratejini yaz veya hazır stratejileri kullan.
+
+                      - Backtesting ve analiz araçları.
+                        Gerçek para kullanmadan stratejini test et.
+
+                          - Binance, Bybit gibi borsalarla uyumlu.
+
+                          releaseNotes: >-
+                            Bu sürüm Freqtrade stable versiyonunu içerir.
+
+                              - Web arayüzü desteği
+                                - API server iyileştirmeleri
+                                  - Performans ve stabilite artışı
+                                    - Yeni strateji özellikleri
+
+                                    developer: Freqtrade
+                                    website: https://www.freqtrade.io/
+                                    dependencies: []
+                                    repo: https://github.com/freqtrade/freqtrade
+                                    support: https://github.com/freqtrade/freqtrade/discussions
+
+                                    port: 8080
+
+                                    gallery:
+                                      - https://www.freqtrade.io/en/stable/_images/freq-ui-overview.png
+                                        - https://www.freqtrade.io/en/stable/_images/freq-ui-trades.png
+                                          - https://www.freqtrade.io/en/stable/_images/freq-ui-backtesting.png
+
+                                          path: ""
+                                          defaultUsername: "admin"
+                                          defaultPassword: "admin12345"
+
+                                          submitter: ismailhkn55
+                                          submission: ""
