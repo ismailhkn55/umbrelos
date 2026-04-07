@@ -2,66 +2,24 @@ version: "3.7"
 
 services:
   app_proxy:
-      environment:
-            APP_HOST: freqtrade_main_1
-                  APP_PORT: 8080
-                        PROXY_AUTH_ADD: "false"
-
-                          main:
-                              image: freqtradeorg/freqtrade:stable
-
-                                  container_name: freqtrade
-                                      user: "1000:1000"
-
-                                          command: >
-                                                webserver
-                                                      --config /freqtrade/user_data/config.json
-
-                                                          environment:
-                                                                - FREQTRADE__API_SERVER__ENABLED=true
-                                                                      - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
-                                                                            - FREQTRADE__API_SERVER__PORT=8080
-                                                                                  - FREQTRADE__API_SERVER__USERNAME=admin
-                                                                                        - FREQTRADE__API_SERVER__PASSWORD=admin12345
-
-                                                                                            ports:
-                                                                                                  - "7092:8080"
-
-                                                                                                      restart: on-failure
-                                                                                                          stop_grace_period: 1m
-
-                                                                                                              volumes:
-                                                                                                                    - ${APP_DATA_DIR}/user_data:/freqtrade/user_dataversion: "3.7"
-
-                                                                                                                    services:
-                                                                                                                      app_proxy:
-                                                                                                                          environment:
-                                                                                                                                APP_HOST: freqtrade_main_1
-                                                                                                                                      APP_PORT: 8080
-                                                                                                                                            PROXY_AUTH_ADD: "false"
-
-                                                                                                                                              main:
-                                                                                                                                                  image: freqtradeorg/freqtrade:stable
-
-                                                                                                                                                      container_name: freqtrade
-                                                                                                                                                          user: "1000:1000"
-
-                                                                                                                                                              command: >
-                                                                                                                                                                    webserver
-                                                                                                                                                                          --config /freqtrade/user_data/config.json
-
-                                                                                                                                                                              environment:
-                                                                                                                                                                                    - FREQTRADE__API_SERVER__ENABLED=true
-                                                                                                                                                                                          - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
-                                                                                                                                                                                                - FREQTRADE__API_SERVER__PORT=8080
-                                                                                                                                                                                                      - FREQTRADE__API_SERVER__USERNAME=admin
-                                                                                                                                                                                                            - FREQTRADE__API_SERVER__PASSWORD=admin12345
-
-                                                                                                                                                                                                                ports:
-                                                                                                                                                                                                                      - "7092:8080"
-
-                                                                                                                                                                                                                          restart: on-failure
-                                                                                                                                                                                                                              stop_grace_period: 1m
-
-                                                                                                                                                                                                                                  volumes:
-                                                                                                                                                                                                                                        - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
+    image: freqtradeorg/freqtrade:stable
+    container_name: freqtrade
+    user: "1000:1000"
+    command: >
+      webserver
+      --config /freqtrade/user_data/config.json
+    environment:
+      APP_HOST: freqtrade_main_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+      FREQTRADE__API_SERVER__ENABLED: "true"
+      FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS: "0.0.0.0"
+      FREQTRADE__API_SERVER__PORT: "8080"
+      FREQTRADE__API_SERVER__USERNAME: "admin"
+      FREQTRADE__API_SERVER__PASSWORD: "admin12345"
+    ports:
+      - "7092:8080"
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/user_data:/freqtrade/user_data
