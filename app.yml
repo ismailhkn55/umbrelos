@@ -25,14 +25,14 @@ releaseNotes: >-
 developer: Freqtrade
 website: https://www.freqtrade.io/
 dependencies: []
-repo: https://github.com/freqtrade/freqtrade
+repo: https://github.com/ismailhkn55/umbrelos-app-os
 support: https://github.com/freqtrade/freqtrade/discussions
 port: 8080
 gallery:
   - https://www.freqtrade.io/en/stable/_images/freq-ui-overview.png
   - https://www.freqtrade.io/en/stable/_images/freq-ui-trades.png
   - https://www.freqtrade.io/en/stable/_images/freq-ui-backtesting.png
-path: ""
+path: "."
 defaultUsername: "admin"
 defaultPassword: "admin12345"
 submitter: ismailhkn55
