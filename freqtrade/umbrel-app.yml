@@ -1,39 +1,30 @@
 manifestVersion: 1
-id: freqtrade
-category: finance
-name: Freqtrade
-version: "stable"
-tagline: Otomatik kripto trading botu ve web arayüzü
+id: sparkles-hello-world
+name: Hello World
+tagline: Replace this tagline with your app's tagline
+icon: https://svgur.com/i/mvA.svg
+category: Development
+version: "1.0.0"
+port: 4000
 description: >-
-  Freqtrade, açık kaynaklı ve güçlü bir kripto alım-satım botudur.
-  Strateji tabanlı otomatik trading yapmanı sağlar.
-features:
-  - Açık kaynak ve tamamen ücretsizdir.
-  - Kendi trading botunu kontrol et ve özelleştir.
-  - Docker ile hızlı kurulum.
-  - Dakikalar içinde çalışır hale gelir.
-  - Web arayüzü ile kolay kullanım.
-  - Strateji desteği (Python).
-  - Backtesting ve analiz araçları.
-  - Binance, Bybit gibi borsalarla uyumlu.
-releaseNotes: >-
-  Bu sürüm Freqtrade stable versiyonunu içerir.
-  - Web arayüzü desteği
-  - API server iyileştirmeleri
-  - Performans ve stabilite artışı
-  - Yeni strateji özellikleri
-developer: Freqtrade
-website: https://www.freqtrade.io/
-dependencies: []
-repo: https://github.com/freqtrade/freqtrade
-support: https://github.com/freqtrade/freqtrade/discussions
-port: 8080
+  Add your app's description here.
+
+
+  You can also add newlines!
+
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
 gallery:
-  - https://www.freqtrade.io/en/stable/_images/freq-ui-overview.png
-  - https://www.freqtrade.io/en/stable/_images/freq-ui-trades.png
-  - https://www.freqtrade.io/en/stable/_images/freq-ui-backtesting.png
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "admin12345"
-submitter: ismailhkn55
-submission: ""
+defaultUsername: ""
+defaultPassword: ""
