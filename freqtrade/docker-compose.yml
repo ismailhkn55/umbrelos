@@ -1,11 +1,12 @@
 version: "3.7"
 
 services:
+  
   app_proxy:
-      environment:
+    environment:
           APP_HOST: freqtrade_main_1
           APP_PORT: 8080
-      server:
+  server:
       image: freqtradeorg/freqtrade:stable
       user: "1000:1000"
-init: true
+      init: true
